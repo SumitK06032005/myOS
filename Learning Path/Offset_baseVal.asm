@@ -1,3 +1,5 @@
+; Code to learn about offset and base value 
+
 mov ah, 0x0e
 
 mov al, [the_secret]    ; Here the_secret is just an offset and can't really point towards the actual address
