@@ -1,3 +1,3 @@
-# myOS
-Making my own OS while learning OS Dev :)
-And this is my first project that I am making myself and also on github as well.
+# StringOS
+Learning OSDev and documenting my learning here.
+Another goal is to make my own small but not too complex OS called StringOS :)
