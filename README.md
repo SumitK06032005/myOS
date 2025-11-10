@@ -19,18 +19,18 @@ It focuses on understanding how the CPU boots, how to print characters without B
 ---
 
 ## 🧱 Project Structure
--StringOS/\n
--├── src/\n
--│ ├── bootloader.asm # Main bootloader entry (16-bit)\n
--│ ├── gdt.asm # GDT setup for Protected Mode\n
--│ ├── pm_entry.asm # 32-bit entry point\n
--│ └── print.asm # Text printing routines\n
--├── build/\n
--│ ├── bootloader.bin # Compiled binary\n
--├── docs/\n
--│ └── Architecture.md\n
--├── LICENSE\n
--└── README.md\n
+-StringOS/  
+-├── src/  
+-│ ├── bootloader.asm # Main bootloader entry (16-bit)  
+-│ ├── gdt.asm # GDT setup for Protected Mode  
+-│ ├── pm_entry.asm # 32-bit entry point  
+-│ └── print.asm # Text printing routines  
+-├── build/  
+-│ ├── bootloader.bin # Compiled binary  
+-├── docs/  
+-│ └── Architecture.md  
+-├── LICENSE  
+-└── README.md  
 
 ---
 
@@ -38,13 +38,13 @@ It focuses on understanding how the CPU boots, how to print characters without B
 
 To build and run StringOS, you’ll need:
 
-- [NASM](https://www.nasm.us/) — assembler\n    
-- [QEMU](https://www.qemu.org/) — emulator for testing  \n
+- [NASM](https://www.nasm.us/) — assembler      
+- [QEMU](https://www.qemu.org/) — emulator for testing    
 
 ---
 
 ## 🚀 Build & Run
 
 ### Option 1: Manual build
--nasm -f bin src/32-bitPM.asm -o bootloader.bin\n
--qemu-system-x86_64 -drive format=raw,file=bootloader.bin
+-nasm -f bin src/32-bitPM.asm -o bootloader.bin  
+-qemu-system-x86_64 -drive format=raw,file=bootloader.bin  
